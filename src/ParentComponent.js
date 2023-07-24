@@ -12,7 +12,7 @@ const ParentComponent = () => {
   };
 
   return (
-    <div>
+    <div className="container mx-auto p-4">
       <ApiIntakeForm onFormSubmit={handleFormSubmit} />
       {apiKey && location && (
         <TemperatureComponent apiKey={apiKey} location={location} />
