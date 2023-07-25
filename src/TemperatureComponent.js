@@ -49,14 +49,14 @@ const TemperatureComponent = ({ apiKey, location }) => {
   }, [apiKey, location]);
 
   return (
-    <div className="container mx-auto p-4 max-w-md bg-gray-100 rounded-md shadow-md">
+    <div className="container mx-10 p-4 max-2xl bg-gray-100 rounded-md shadow-md">
       {currentWeather && (
-        <div className="mb-8">
+        <div className="m-8">
           <h2 className="text-2xl font-semibold mb-2">Current Weather in {location}:</h2>
           <div className="flex items-center mb-4 p-4">
             <WeatherIcon description={currentWeather.weather[0].description} />
             <div className="ml-4">
-              <p className="text-2xl">{currentWeather.main.temp} °C</p>
+              <p className="text-lg">{currentWeather.main.temp} °C</p>
               <p className="text-xl">Description: {currentWeather.weather[0].description}</p>
               <p className="text-xl">Humidity: {currentWeather.main.humidity}%</p>
               <p className="text-xl">Wind Speed: {currentWeather.wind.speed} m/s</p>

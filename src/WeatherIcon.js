@@ -5,6 +5,7 @@ import CloudIcon from './images/wi-cloudy.svg';
 import ThunderstormIcon from './images/wi-thunderstorm.svg';
 import SnowIcon from './images/wi-snow-wind.svg';
 import Stars from './images/wi-stars.svg';
+import HazeIcon from './images/wi-dust.svg';
 
 const WeatherIcon = ({ description }) => {
   const getWeatherIcon = (description) => {
@@ -34,6 +35,8 @@ const WeatherIcon = ({ description }) => {
         return ThunderstormIcon;
         case 'snow':
         return SnowIcon;
+        case 'haze':
+        return HazeIcon;
         default:
           return Stars; // Return the default icon if the weather condition is not matched
       }
